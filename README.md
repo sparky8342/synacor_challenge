@@ -3,7 +3,7 @@
 Here is my code used to solve the synacor challenge, which is here: https://challenge.synacor.com/.
 This is highly recommended and can be done in any language of your choice.
 
-
+(I've not included the files you download for the challenge).
 
 ## SPOILERS FOLLOW
 ```
@@ -184,7 +184,11 @@ return fn(1) {
 
 Some languages (like Haskell) will optimise these calls with tail recursion. This means that instead of putting a new call on the stack and waiting for it, the code just starts executing the new function call. It replaces the current calling code. See https://en.wikipedia.org/wiki/Tail_call for a better explanation!
 
-Perl doesn't do this, but the 'goto' function makes this possible. So goto actually has a use beyond `10 PRINT "HELLO" 20 GOTO 10`.
+Perl doesn't do this, but the 'goto' function makes this possible. So goto actually has a use beyond:
+```
+10 PRINT "HELLO"
+20 GOTO 10
+```
 
 If you set @_ to the input for the next call and call 'goto &(subroutine)', the same effect happens with the current running subroutine being replaced by the call to the next one.
 

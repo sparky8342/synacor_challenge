@@ -1,7 +1,6 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-use Data::Dumper;
 
 my @op_names = qw/halt set push pop eq gt jmp jt jf add mul mod and or not rmem wmem call ret out read noop/;
 my @op_args = (0,2,1,1,3,3,1,2,2,3,3,3,3,3,2,2,2,1,0,1,1,0);
